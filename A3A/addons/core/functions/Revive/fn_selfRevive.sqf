@@ -27,7 +27,8 @@ if (time < player getVariable ["A3A_selfReviveTimeout", -1]) exitWith {
 
 // ok so now we actually do it...
 player setVariable ["incapacitated", false, true];
-player setDamage 0.5;
+//McDAZED
+player setDamage 0;
 player removeItem selectRandom _hasFAKs;
 
 private _timeout = missionNamespace getVariable ["A3A_selfReviveTimeout", 300];
@@ -39,15 +40,16 @@ private _aimCoef = missionNamespace getVariable ["A3A_selfReviveAimCoef", 3];
 player setVariable[QGVAR(restoreAimCoef), getCustomAimCoef player];
 player setCustomAimCoef _aimCoef;
 
+//McDAZED
 // Some bog standard desaturation
-private _handle = ppEffectCreate ["ColorCorrections", 1537];
-_handle ppEffectEnable true;
-_handle ppEffectAdjust [1, 1, 0,
-	[0, 0, 0, 0],
-	[1, 1, 1, 0.5],
-	[0.299, 0.587, 0.114, 0]
-];
-_handle ppEffectCommit 5;
+//private _handle = ppEffectCreate ["ColorCorrections", 1537];
+//_handle ppEffectEnable true;
+//_handle ppEffectAdjust [1, 1, 0,
+//	[0, 0, 0, 0],
+//	[1, 1, 1, 0.5],
+//	[0.299, 0.587, 0.114, 0]
+//];
+//_handle ppEffectCommit 5;
 A3A_selfRevivePPHandle = _handle;
 
 _timeout spawn {
