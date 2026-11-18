@@ -178,7 +178,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 1;
+        default = 0;
         lockOnSave = 1;
         class dependencies
         {
@@ -227,7 +227,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 3;
     };
     class lossCondition: ScenarioParams
     {
@@ -247,7 +247,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 3;
         lockOnSave = 1;
     };
     class areRandomEventsEnabled: ScenarioParams
@@ -257,7 +257,7 @@ class Params
         tooltip = $STR_params_randomEvents_desc;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
-        default = 1;
+        default = 0;
     };
     class createAmbientSounds: ScenarioParams
     {
@@ -312,7 +312,7 @@ class Params
         tooltip = $STR_params_guestCommander_desc;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
-        default = 1;
+        default = 0;
     };
     class tkPunish: MemberParams
     {
@@ -332,7 +332,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 1;
+        default = 0;
     };
     class ScriptParamsSpacer : BasicParams
     {
@@ -353,7 +353,7 @@ class Params
         tooltip = $STR_params_magRepack_desc;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 1;
+        default = 0;
         lockInGame = 1;
     };
     class RRTurretMagazines: ScriptParams
@@ -392,7 +392,7 @@ class Params
         tooltip = $STR_params_autosave_desc;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 1;
+        default = 0;
         class dependencies
         {
             class autoSaveInterval
@@ -532,7 +532,7 @@ class Params
                 hard = 3600;
             };
         };
-        default = -1;
+        default = 3600;
     };
     class settingsTimeMultiplier: TimerParams
     {
@@ -540,7 +540,7 @@ class Params
         tooltip = $STR_params_timeMultiplier_desc;
         values[] = {1, 2, 3, 4, 6, 8, 12, 24};
         texts[] = {$STR_params_timeMultiplier_0, $STR_params_timeMultiplier_1, $STR_params_timeMultiplier_2,$STR_params_timeMultiplier_3,$STR_params_timeMultiplier_4,$STR_params_timeMultiplier_5,$STR_params_timeMultiplier_6,$STR_params_timeMultiplier_7};
-        default = 1;
+        default = 3;
         lockInGame = 1;
     };
     class BasicParamsSpacer : AllParams
@@ -604,7 +604,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 300;
+        default = 200;
     };
     class A3A_roadBlocksBaseChance: AIParams
     {
@@ -732,7 +732,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 1;
     };
     class playerRecruitAI: AIParams
     {
@@ -789,7 +789,7 @@ class Params
         tooltip = $STR_params_aiControlTime_desc;
         values[] = {30, 60, 90, 120};
         texts[] = {"30", "60", "90", "120"};
-        default = 60;
+        default = 120;
     };
     class unconsciousPossessAi: AIParams
     {
@@ -809,7 +809,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 1;
         lockInGame = 0;
     };
     class loadoutsToGenerate: AIParams
@@ -839,7 +839,7 @@ class Params
         tooltip = $STR_params_AIrevivesOutsideSquad_desc;
         values[] = {25, 50, 75, 100, -1};
         texts[] = {"25", "50", "75", "100", $STR_params_afk_disabled};
-        default = -1;
+        default = 25;
     };
 
     class BalanceParamsSpacer : AIParamsSpacer
@@ -888,7 +888,7 @@ class Params
                 hard = 0;
             };
         };
-        default = 500;
+        default = 1000;
         lockOnSave = 1;
     };
     class initialFactionMoney: RebelBalanceParams
@@ -919,7 +919,7 @@ class Params
                 hard = 1000;
             };
         };
-        default = 1000;
+        default = 10000;
         lockOnSave = 1;
     };
     class deathPenalty: RebelBalanceParams
@@ -950,7 +950,7 @@ class Params
             };
             class large : solo {};
         };
-        default = 30;
+        default = 0;
     };
     class initialHr: RebelBalanceParams
     {
@@ -980,7 +980,7 @@ class Params
                 hard = 0;
             };
         };
-        default = 8;
+        default = 24;
         lockOnSave = 1;
     };
     class limitHR: RebelBalanceParams
@@ -1061,7 +1061,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 1;
     };
     class maxSupportPoints: RebelBalanceParams
     {
@@ -1106,7 +1106,7 @@ class Params
             };
             class large : solo {};
         };
-        default = 0;
+        default = 1;
         lockOnSave = 1;
         lockInGame = 1;
     };
@@ -1178,7 +1178,7 @@ class Params
             };
             class large : solo {};
         };
-        default = 1;
+        default = 0;
     };
     class A3A_reviveTime: RebelBalanceParams
     {
@@ -1198,7 +1198,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 16;
+        default = 8;
     };
     class A3A_selfReviveMethods: RebelBalanceParams
     {
@@ -1223,7 +1223,7 @@ class Params
             };
             class large : solo {};
         };
-        default = 0;
+        default = 1;
     };
     class useDownedNotification: RebelBalanceParams
     {
@@ -1243,7 +1243,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 1;
     };
     class rallyPointSpawnCount: RebelBalanceParams
     {
@@ -1278,7 +1278,7 @@ class Params
                 hard = 15;
             };
         };
-        default = 10;
+        default = 5;
     };
     class staminaEnabled: RebelBalanceParams
     {
@@ -1452,7 +1452,7 @@ class Params
             };
             class large : medium {};
         };
-        default = 3;
+        default = 1;
     };
     class A3A_rebelGarrisonLimit: RebelBalanceParams
     {
@@ -1472,7 +1472,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 24;
+        default = 16;
     };
     class A3A_rebelGarrisonGroupSize: RebelBalanceParams
     {
@@ -1480,7 +1480,7 @@ class Params
         tooltip = $STR_params_rebelGarrisonGroupSize_desc;
         values[] = {2, 4, 6, 8, 10, 12, 14, 16};
         texts[] = {"2", "4", "6", "8", "10", "12", "14", "16"};
-        default = 8;
+        default = 4;
     };
     class AIBalanceParamsSpacer : AIParamsSpacer
     {
@@ -1528,7 +1528,7 @@ class Params
                 hard = 28;
             };
         };
-        default = 11;
+        default = 14;
         lockInGame = 1;
     };
     class A3A_enemyAttackMul: AIBalanceParams
@@ -1565,7 +1565,7 @@ class Params
                 hard = 28;
             };
         };
-        default = 10;
+        default = 14;
         lockInGame = 1;
     };
     class A3A_invaderBalanceMul: AIBalanceParams
@@ -1602,7 +1602,7 @@ class Params
                 hard = 20;
             };
         };
-        default = 12;
+        default = 14;
         lockInGame = 1;
     };
     class enablePunishments: AIBalanceParams
@@ -1765,7 +1765,7 @@ class Params
             };
             class large : solo {};
         };
-        default = 2;
+        default = 3;
     };
     class aiAccuracyCeiling: AIBalanceParams
     {
@@ -1785,7 +1785,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 45;
+        default = 60;
     };
     class unconChanceEny : AIBalanceParams
     {
@@ -1820,7 +1820,7 @@ class Params
                 hard = 0;
             };
         };
-        default = 10;
+        default = 0;
         lockCondition = "A3A_hasACEMedical;";
         lockConditionTooltip = $STR_params_unconChance_lockCondition;
     };
@@ -2040,7 +2040,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 1;
+        default = 0;
         lockInGame = 1;
     };
     class MiscBalanceParamsSpacer : AIParamsSpacer
@@ -2301,7 +2301,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 1;
         lockOnSave = 1; // Causes errors if disabling trader after already having found him in a save
         class dependencies
         {
@@ -2580,7 +2580,7 @@ class Params
                 hard = 40;
             };
         };
-        default = 25;
+        default = 10;
     };
     class unlockedUnlimitedAmmo: UnlockParams
     {
@@ -2601,7 +2601,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 1;
     };
     class allowGuidedLaunchers: UnlockParams
     {
@@ -2643,7 +2643,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 1;
     };
     class allowUnlockedTNVG: UnlockParams
     {
@@ -2664,7 +2664,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 0;
+        default = 1;
     };
     class cosmeticsEnabled: UnlockParams
     {
@@ -2672,7 +2672,7 @@ class Params
         tooltip = $STR_A3AU_cosmetics_desc;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 1;
+        default = 0;
     };
     class CrateParamsSpacer : LootParams
     {
@@ -2735,7 +2735,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 50;
+        default = 400;
     };
     class lootCratePrice: CrateParams
     {
@@ -2781,7 +2781,7 @@ class Params
         tooltip = $STR_params_crateWepTypeMax_desc;
         values[] = {0,2,4,6,8,12,16};
         texts[] = {"1","3","5","7","9","13","17"};
-        default = 8;
+        default = 16;
     };
     class crateWepNumMax: CrateParams
     {
@@ -2801,7 +2801,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 8;
+        default = 16;
     };
     class crateItemTypeMax: CrateParams
     {
@@ -2809,7 +2809,7 @@ class Params
         tooltip = $STR_params_crateItemTypeMax_desc;
         values[] = {0,2,4,9};
         texts[] = {"1","3","5","10"};
-        default = 4;
+        default = 9;
     };
     class crateItemNumMax: CrateParams
     {
@@ -2829,7 +2829,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 5;
+        default = 15;
     };
     class crateAmmoTypeMax: CrateParams
     {
@@ -2837,7 +2837,7 @@ class Params
         tooltip = $STR_params_crateAmmoTypeMax_desc;
         values[] = {0,2,4,6,9,14,19};
         texts[] = {"1","3","5","7","10","15","20"};
-        default = 6;
+        default = 19;
     };
     class crateAmmoNumMax: CrateParams
     {
@@ -2857,7 +2857,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 20;
+        default = 30;
     };
     class crateExplosiveTypeMax: CrateParams
     {
@@ -2865,7 +2865,7 @@ class Params
         tooltip = $STR_params_crateExplosiveTypeMax_desc;
         values[] = {0,2,4,9};
         texts[] = {"1","3","5","10"};
-        default = 4;
+        default = 9;
     };
     class crateExplosiveNumMax: CrateParams
     {
@@ -2885,7 +2885,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 5;
+        default = 15;
     };
     class crateAttachmentTypeMax: CrateParams
     {
@@ -2893,7 +2893,7 @@ class Params
         tooltip = $STR_params_crateAttachmentTypeMax_desc;
         values[] = {0,2,4,6,9,14,19};
         texts[] = {"1","3","5","7","10","15","20"};
-        default = 6;
+        default = 19;
     };
     class crateAttachmentNumMax: CrateParams
     {
@@ -2913,7 +2913,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 15;
+        default = 30;
     };
     class crateBackpackTypeMax: CrateParams
     {
@@ -2921,7 +2921,7 @@ class Params
         tooltip = $STR_params_crateBackpackTypeMax_desc;
         values[] = {0,2,4,9};
         texts[] = {"1","3","5","10"};
-        default = 0;
+        default = 9;
     };
     class crateBackpackNumMax: CrateParams
     {
@@ -2941,7 +2941,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 3;
+        default = 15;
     };
     class crateVestTypeMax: CrateParams
     {
@@ -2949,7 +2949,7 @@ class Params
         tooltip = $STR_params_crateVestTypeMax_desc;
         values[] = {0,2,4,9};
         texts[] = {"1","3","5","10"};
-        default = 0;
+        default = 9;
     };
     class crateVestNumMax: CrateParams
     {
@@ -2969,7 +2969,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 3;
+        default = 15;
     };
     class crateHelmetTypeMax: CrateParams
     {
@@ -2977,7 +2977,7 @@ class Params
         tooltip = $STR_params_crateHelmetTypeMax_desc;
         values[] = {0,2,4,9};
         texts[] = {"1","3","5","10"};
-        default = 0;
+        default = 9;
     };
     class crateHelmetNumMax: CrateParams
     {
@@ -2997,7 +2997,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 3;
+        default = 15;
     };
     class crateDeviceTypeMax: CrateParams
     {
@@ -3005,7 +3005,7 @@ class Params
         tooltip = $STR_params_crateDeviceTypeMax_desc;
         values[] = {0,2,4,9};
         texts[] = {"1","3","5","10"};
-        default = 2;
+        default = 9;
     };
     class crateDeviceNumMax: CrateParams
     {
@@ -3025,7 +3025,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 3;
+        default = 15;
     };
     class VehicleLootParamsSpacer : LootParams
     {
@@ -3058,7 +3058,7 @@ class Params
             class medium : solo {};
             class large : solo {};
         };
-        default = 1;
+        default = 0;
         lockInGame = 1;
     };
     class enableVehicleAutoLockCiv: enableVehicleAutoLock
@@ -3122,7 +3122,7 @@ class Params
             };
             class large : solo {};
         };
-        default = 33;
+        default = 0;
         class dependencies
         {
             class helmetLossSound
@@ -3138,7 +3138,7 @@ class Params
         tooltip = $STR_params_helmetLossSound_desc;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 1;
+        default = 0;
     };
     class BMParamsSpacer2 : AllParams
     {
@@ -3193,7 +3193,7 @@ class Params
         tooltip = $STR_params_LogLevel_desc;
         values[] = {1,2,3,4};
         texts[] = {"Error", "Info", "Debug", "Verbose"};
-        default = 2;
+        default = 3;
     };
     class A3A_logDebugConsole: DevelopmentParams
     {
