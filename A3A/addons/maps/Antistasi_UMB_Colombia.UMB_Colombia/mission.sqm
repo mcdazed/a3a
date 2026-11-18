@@ -26,7 +26,7 @@ class EditorData
 		aside[]={0.99702966,-1.7334969e-08,-0.077071905};
 	};
 };
-binarizationWanted=0;
+binarizationWanted=1;
 sourceName="Antistasi_UMB_Colombia";
 addons[]=
 {
